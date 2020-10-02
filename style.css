@@ -1,0 +1,116 @@
+:root {
+    --top: #55668d;
+    --side: #0253b3;
+    --text: #faf8ef;
+    --boxes: #93c9fa;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', "Segoe UI", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    background-color: var(--top);
+    color: var(--text);
+    text-align: center;
+    width: fit-content;
+}
+
+body {
+    background-image: url(./images/data-center.jpg);
+    background-size: 100%;
+}
+
+.phonenumber {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.lnsi-logo {
+    padding: 25%;
+}
+
+.divmenu {
+    background-color: var(--side);
+}
+
+.pageheader {
+    background-color: var(--side);
+}
+
+.text {
+    margin: 50px;
+    text-align: left;
+}
+
+#griddiv {
+    background-color:rgba(0,0,0,0.80);
+    display: grid;
+}
+
+#headerdiv {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3.333%;
+    text-align: center;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    gap: 2%;
+    margin-left: 2%;
+}
+
+#servicestext {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#servicestextbottom {
+    grid-column: 1 / span 2;
+}
+
+#footer {
+    background-color: var(--top);
+}
+
+#contactinfo {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 1%;
+}
+
+#phonepic {
+    width: 50%;
+    margin-left: 15%;
+}
+#contactphonediv {
+    text-align: left;
+}
+#backtotop{
+    background-color: var(--side);
+    width: 25%;
+    margin-left: 37.5%;
+    
+}
+@media only screen and (max-width: 886px) {
+    [class="divmenu"] {
+        grid-column: 1 / span 5;
+    }
+    [id="logoright"] {
+        display: none;
+    }
+    [id="servicescol1"] {
+        grid-column: 1 /span 2;
+    }
+    [id="servicescol2"] {
+        grid-column: 1 /span 2;
+    }
+    [class="pageheader"] {
+        margin-top: 50px;
+    }
+    [id="logoleft"] {
+        width: 75px;
+    }
+}
